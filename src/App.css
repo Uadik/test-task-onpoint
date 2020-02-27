@@ -1,0 +1,166 @@
+/* slide 1 */
+
+#slide1 h1 {
+  color: #0d319c;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+#slide1 p {
+  color: #0d319c;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+#slide1 h4 {
+  position: relative;
+  top: 37px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+#slide1 .textblock {
+  position: absolute;
+  margin-top: -17%;
+  margin-left: -7%;
+  text-align: start;
+}
+
+#slide1 #label1 {
+  position: absolute;
+  margin-top: -10%;
+  margin-left: 19%;
+}
+
+#slide1 #label2 {
+  position: absolute;
+  margin-top: 1%;
+  margin-left: -22%;
+}
+
+#slide1 #label3 {
+  position: absolute;
+  margin-top: 12%;
+  margin-left: -7%;
+}
+
+#slide1 #label4 {
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 31%;
+}
+
+#scrollDown {
+  position: absolute;
+  height: 15vmin;
+  width: 100%;
+  bottom: 0%;
+  background: url('/next.png') no-repeat bottom center;
+  background-size: 100% 100%;
+}
+
+#eclipse-1 {
+  margin-top: -9.5%;
+  margin-left: 7.5%;
+  height: 50px;
+  width: 50px;
+}
+#eclipse-2 {
+  margin-top: 5.5%;
+  margin-left: -22%;
+  height: 35px;
+  width: 35px;
+}
+#eclipse-3 {
+  margin-top: 15.5%;
+  margin-left: -2.5%;
+  height: 20px;
+  width: 20px;
+}
+#eclipse-4 {
+  margin-top: 14%;
+  margin-left: 31%;
+  height: 20px;
+  width: 20px;
+}
+
+.eclipse {
+  content: '';
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-color: rgba(223, 81, 0, 0);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50%;
+  background-color: rgba(223, 81, 0, 0.6);
+  animation: pulse 9s infinite;
+  transform: scale(1);
+}
+
+.eclipse.eclipse-offset-1 {
+  animation-delay: 0s;
+}
+.eclipse.eclipse-offset-2 {
+  animation-delay: 3s;
+}
+.eclipse.eclipse-offset-3 {
+  animation-delay: 6s;
+}
+
+/* 107 => 33 */
+@keyframes pulse {
+  0% {
+    transform: scale(0.33);
+    background-color: rgba(223, 81, 0, 0.6);
+    border-color: rgba(223, 81, 0, 0);
+  }
+  50% {
+    transform: scale(1);
+    background-color: rgba(223, 81, 0, 0.15);
+    border-color: rgba(223, 81, 0, 0.6);
+  }
+  100% {
+    transform: scale(0.33);
+    background-color: rgba(223, 81, 0, 0.6);
+    border-color: rgba(223, 81, 0, 0);
+  }
+}
+
+/* slide 2 */
+
+#slide2 > h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-top: -16%;
+}
+
+/* slide 3 */
+
+#slide3 h2 {
+  position: relative;
+  margin-top: 10%;
+  margin-left: -50%;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.tab-content {
+  content: '';
+  /* margin-left: -40%; */
+  /* margin-top: -40%; */
+  height: 58%;
+  width: 90%;
+}
+
+#slide3 #tab1 {
+  background: url('/tab_1_content.png') center / contain no-repeat;
+}
+#slide3 #tab2 {
+  background: url('/tab_2_content.png') center / contain no-repeat;
+}
+#slide3 #tab3 {
+  background: url('/tab_3_content.png') center / contain no-repeat;
+}

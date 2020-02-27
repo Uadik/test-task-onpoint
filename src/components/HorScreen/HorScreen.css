@@ -1,0 +1,10 @@
+.hor-container {
+  height: 100%;
+  width: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.hor-container::-webkit-scrollbar {
+  display: none;
+}
